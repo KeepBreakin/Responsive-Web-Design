@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 299px) {
+  body {
+    background-color: red;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  body {
+    background-color: green;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  #small {
+    flex: 2;
+  }
+
+  #medium {
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #small,
+  #medium,
+  #large {
+    flex: 1;
+    margin: 10px;
+  }
+}
